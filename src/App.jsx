@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import Nav from './component/nav'
-import Hero from './pages/hero'
+import Nav from "./component/Nav";
+import Hero from './pages/Hero';
 
 function App() {
  

@@ -8,14 +8,14 @@ const Nav = () => {
   };
 
   return (
-    <header className="bg-white shadow-md fixed w-full z-10">
+    <header className="fixed z-10 w-full bg-white shadow-md">
       {/* Top Navigation Bar */}
-      <div className="container mx-auto px-10 py-4 flex items-center justify-between">
+      <div className="container flex items-center justify-between px-10 py-4 mx-auto">
         {/* Logo */}
         <div className="text-2xl font-bold text-red-500">Puja Patha</div>
         
         {/* Desktop Menu */}
-        <nav className="hidden md:flex space-x-6">
+        <nav className="hidden space-x-6 md:flex">
           <a href="#" className="text-gray-700 hover:text-red-500">Home</a>
           <a href="#services" className="text-gray-700 hover:text-red-500">Services</a>
           <a href="#about" className="text-gray-700 hover:text-red-500">About</a>
@@ -24,7 +24,7 @@ const Nav = () => {
 
         {/* Mobile Hamburger Menu */}
         <button 
-          className="md:hidden text-gray-700 focus:outline-none"
+          className="text-gray-700 md:hidden focus:outline-none"
           onClick={toggleMobileMenu}
         >
           {/* Hamburger Icon */}
@@ -47,7 +47,7 @@ const Nav = () => {
 
       {/* Mobile Dropdown Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white shadow-md py-4 px-6">
+        <div className="px-6 py-4 bg-white shadow-md md:hidden">
           <a href="#" className="block py-2 text-gray-700 hover:text-red-500">Home</a>
           <a href="#services" className="block py-2 text-gray-700 hover:text-red-500">Services</a>
           <a href="#about" className="block py-2 text-gray-700 hover:text-red-500">About</a>
