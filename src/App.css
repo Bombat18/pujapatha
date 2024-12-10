@@ -1,0 +1,26 @@
+@keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+  
+  @keyframes zoomText {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+  
+  .animate-zoom {
+    animation: zoom 5s ease-in-out infinite;
+  }
+  
+  .animate-zoom-text {
+    animation: zoomText 5s ease-in-out infinite;
+  }
+  
